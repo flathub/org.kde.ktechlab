@@ -36,7 +36,7 @@
                     "sha256": "479a8b53558bd16a96af8d4134cbfda75a5eb95c9ca8a4cbba2ee265b237d022",
                     "x-checker-data": {
                         "type": "anitya",
-                        "project-id": 8762,
+                        "project-id": 379839,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/frameworks/$major.$minor/portingAids/kjs-$version.tar.xz"
                     }
@@ -54,7 +54,7 @@
                     "sha256": "3e6f1038d823488657b08d9899dc49054b3c5dfef865e4c889754b98f427c8d5",
                     "x-checker-data": {
                         "type": "anitya",
-                        "project-id": 8762,
+                        "project-id": 379839,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/frameworks/$major.$minor/portingAids/khtml-$version.tar.xz"
                     }
