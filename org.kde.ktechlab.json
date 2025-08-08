@@ -74,8 +74,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://downloads.sourceforge.net/project/gpsim/gpsim/0.31.0/gpsim-0.31.0.tar.gz",
-                    "sha256": "110ee6be3a5d02b32803a91e480cbfc9d423ef72e0830703fc0bc97b9569923f",
+                    "url": "http://downloads.sourceforge.net/project/gpsim/gpsim/0.32.0/gpsim-0.32.1.tar.gz",
+                    "sha256": "c704d923ae771fabb7f63775a564dfefd7018a79c914671c4477854420b32e69",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8928,
