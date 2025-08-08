@@ -80,7 +80,7 @@
                         "type": "anitya",
                         "project-id": 8928,
                         "stable-only": true,
-                        "url-template": "http://downloads.sourceforge.net/project/gpsim/gpsim/$version/gpsim-$version.tar.gz"
+                        "url-template": "http://downloads.sourceforge.net/project/gpsim/gpsim/${major}.${minor}.0/gpsim-$version.tar.gz"
                     }
                 }
             ],
