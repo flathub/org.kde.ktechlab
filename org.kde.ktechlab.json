@@ -17,7 +17,9 @@
             "config-opts": [
                 "--enable-unicode-properties"
             ],
-            "cleanup": ["*"],
+            "cleanup": [
+                "*"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -32,8 +34,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.114/portingAids/kjs-5.114.0.tar.xz",
-                    "sha256": "479a8b53558bd16a96af8d4134cbfda75a5eb95c9ca8a4cbba2ee265b237d022",
+                    "url": "https://download.kde.org/stable/frameworks/5.116/portingAids/kjs-5.116.0.tar.xz",
+                    "sha256": "9fb4f33e31d5b31eb6449311c1c61acaa968d42419252c0ab9dccb1f5fd9e1b7",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 379839,
@@ -50,8 +52,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.114/portingAids/khtml-5.114.0.tar.xz",
-                    "sha256": "3e6f1038d823488657b08d9899dc49054b3c5dfef865e4c889754b98f427c8d5",
+                    "url": "https://download.kde.org/stable/frameworks/5.116/portingAids/khtml-5.116.0.tar.xz",
+                    "sha256": "8921fb41be1b1f8bd3498a8c45bd955eff752b188ae67b50f3dd8c22592bcc8e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 379839,
