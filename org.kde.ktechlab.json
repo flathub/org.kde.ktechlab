@@ -1,15 +1,15 @@
 {
     "id": "org.kde.ktechlab",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-23.08",
+    "runtime-version": "5.15-24.08",
     "sdk": "org.kde.Sdk",
     "command": "ktechlab",
     "rename-icon": "ktechlab",
     "finish-args": [
-        "--share=ipc",
         "--device=dri",
-        "--socket=wayland",
-        "--socket=fallback-x11"
+        "--share=ipc",
+        "--socket=fallback-x11",
+        "--socket=wayland"
     ],
     "modules": [
         {
@@ -17,7 +17,9 @@
             "config-opts": [
                 "--enable-unicode-properties"
             ],
-            "cleanup": ["*"],
+            "cleanup": [
+                "*"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -32,11 +34,11 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.114/portingAids/kjs-5.114.0.tar.xz",
-                    "sha256": "479a8b53558bd16a96af8d4134cbfda75a5eb95c9ca8a4cbba2ee265b237d022",
+                    "url": "https://download.kde.org/stable/frameworks/5.116/portingAids/kjs-5.116.0.tar.xz",
+                    "sha256": "9fb4f33e31d5b31eb6449311c1c61acaa968d42419252c0ab9dccb1f5fd9e1b7",
                     "x-checker-data": {
                         "type": "anitya",
-                        "project-id": 8762,
+                        "project-id": 379839,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/frameworks/$major.$minor/portingAids/kjs-$version.tar.xz"
                     }
@@ -50,11 +52,11 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.114/portingAids/khtml-5.114.0.tar.xz",
-                    "sha256": "3e6f1038d823488657b08d9899dc49054b3c5dfef865e4c889754b98f427c8d5",
+                    "url": "https://download.kde.org/stable/frameworks/5.116/portingAids/khtml-5.116.0.tar.xz",
+                    "sha256": "8921fb41be1b1f8bd3498a8c45bd955eff752b188ae67b50f3dd8c22592bcc8e",
                     "x-checker-data": {
                         "type": "anitya",
-                        "project-id": 8762,
+                        "project-id": 379839,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/frameworks/$major.$minor/portingAids/khtml-$version.tar.xz"
                     }
@@ -72,13 +74,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://downloads.sourceforge.net/project/gpsim/gpsim/0.31.0/gpsim-0.31.0.tar.gz",
-                    "sha256": "110ee6be3a5d02b32803a91e480cbfc9d423ef72e0830703fc0bc97b9569923f",
+                    "url": "http://downloads.sourceforge.net/project/gpsim/gpsim/0.32.0/gpsim-0.32.1.tar.gz",
+                    "sha256": "c704d923ae771fabb7f63775a564dfefd7018a79c914671c4477854420b32e69",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8928,
                         "stable-only": true,
-                        "url-template": "http://downloads.sourceforge.net/project/gpsim/gpsim/$version/gpsim-$version.tar.gz"
+                        "url-template": "http://downloads.sourceforge.net/project/gpsim/gpsim/${major}.${minor}.0/gpsim-$version.tar.gz"
                     }
                 }
             ],
@@ -120,7 +122,12 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/unstable/ktechlab/ktechlab-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-Add-appstream-data.patch"
                 }
+
             ]
         }
     ]
