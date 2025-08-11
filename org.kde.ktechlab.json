@@ -122,7 +122,12 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/unstable/ktechlab/ktechlab-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-Add-appstream-data.patch"
                 }
+
             ]
         }
     ]

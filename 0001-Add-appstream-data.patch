@@ -1,0 +1,28 @@
+From cd49daf82cc4d0c6ef3531bcab2123664539dd07 Mon Sep 17 00:00:00 2001
+From: Justin Zobel <justin.zobel@gmail.com>
+Date: Mon, 11 Aug 2025 16:37:16 +0930
+Subject: [PATCH] Add appstream data
+
+---
+ src/org.kde.ktechlab.appdata.xml | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/src/org.kde.ktechlab.appdata.xml b/src/org.kde.ktechlab.appdata.xml
+index 3bedc8a..c734472 100644
+--- a/src/org.kde.ktechlab.appdata.xml
++++ b/src/org.kde.ktechlab.appdata.xml
+@@ -3,6 +3,11 @@
+   <id>org.kde.ktechlab.desktop</id>
+   <metadata_license>CC0-1.0</metadata_license>
+   <project_license>GPL-2.0+</project_license>
++  <developer id="org.kde">
++    <name translate="no">KDE</name>
++    <url>https://kde.org</url>
++  </developer>
++  <launchable type="desktop-id">org.kde.ktechlab.desktop</launchable>
+   <name>KTechlab</name>
+   <name xml:lang="ca">KTechlab</name>
+   <name xml:lang="ca-valencia">KTechlab</name>
+-- 
+2.50.1
+
