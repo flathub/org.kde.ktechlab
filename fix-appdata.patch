@@ -1,0 +1,49 @@
+From 9378b85e7847a049ebb7beb3a6e20ced9ebe28ac Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Sabri=20=C3=9Cnal?= <yakushabb@gmail.com>
+Date: Wed, 14 Jan 2026 19:43:36 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+---
+ src/org.kde.ktechlab.appdata.xml | 21 +++++++++++++++------
+ 1 file changed, 15 insertions(+), 6 deletions(-)
+
+diff --git a/src/org.kde.ktechlab.appdata.xml b/src/org.kde.ktechlab.appdata.xml
+index 3bedc8a..0818697 100644
+--- a/src/org.kde.ktechlab.appdata.xml
++++ b/src/org.kde.ktechlab.appdata.xml
+@@ -1,8 +1,21 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<component type="desktop">
+-  <id>org.kde.ktechlab.desktop</id>
++<component type="desktop-application">
++  <id>org.kde.ktechlab</id>
+   <metadata_license>CC0-1.0</metadata_license>
+   <project_license>GPL-2.0+</project_license>
++  <developer id="org.kde">
++    <name translate="no">KDE</name>
++    <url>https://kde.org</url>
++  </developer>
++  <launchable type="desktop-id">org.kde.ktechlab.desktop</launchable>
++  <project_group>KDE</project_group>
++  <provides>
++    <id>org.kde.ktechlab.desktop</id>
++    <binary>ktechlab</binary>
++  </provides>
++  <replaces>
++    <id>org.kde.ktechlab.desktop</id>
++  </replaces>
+   <name>KTechlab</name>
+   <name xml:lang="ca">KTechlab</name>
+   <name xml:lang="ca-valencia">KTechlab</name>
+@@ -314,8 +327,4 @@
+       <url>https://zoltanp.github.io/2020/09/ktechlab-0-50-0.html</url>
+     </release>
+   </releases>
+-  <project_group>KDE</project_group>
+-  <provides>
+-    <binary>ktechlab</binary>
+-  </provides>
+ </component>
+-- 
+2.52.0
+
