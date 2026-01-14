@@ -111,6 +111,9 @@
         {
             "name": "ktechlab",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -126,12 +129,7 @@
                 {
                     "type": "patch",
                     "path": "0001-Add-appstream-data.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "ed1deee11b4494c3b4cd80e806f83ebd697591a9.patch"
                 }
-
             ]
         }
     ]
